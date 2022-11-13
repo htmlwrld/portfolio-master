@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background_home {
+  background-color: black;
+  background-image: url("../src/images/desktop/stars-bg-trans.png");
+}
+
+/* .background_skills {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-image: url("../src/images/mobile/sunMB_shadows.png");
+} */
+
+.icon:hover {
+  stroke: rgba(233, 233, 233, 1);
+  cursor: pointer;
+  stroke-width: 0.4px;
+  transform: translateY(-6%);
+}
+
+.icon_image:hover {
+  transform: translateY(-10%);
+  filter: drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white)
+    drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white);
+  cursor: pointer;
+}
+
+.box {
+  @apply text-black
+
+		min-w-full
+    h-auto
+    w-auto
+		min-h-full
+		rounded;
+}
+
+/* SVG HOVER EFFECT ----------------------------- */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* TOOLTIPS --------------------------- */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(49, 49, 49, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  left: 59%;
+  bottom: 100%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+
+  border-color: rgba(49, 49, 49, 0.7) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip-css .tooltiptext {
+  left: 44%;
+}
+
+.tooltip-vsc .tooltiptext {
+  left: 65%;
+  margin-bottom: 2px !important;
+}
+
+.tooltip-react .tooltiptext {
+  left: 50%;
+  margin-bottom: 20px !important;
+}
+
+.tooltip-js .tooltiptext {
+  left: 24%;
+}
+
+.tooltip-vite .tooltiptext {
+  left: 50%;
+  margin-bottom: 35px !important;
+}
+
+.tooltip-figma .tooltiptext {
+  left: 50%;
+  margin-bottom: 30px !important;
+}
+
+.tooltip-tail .tooltiptext {
+  left: 50%;
+}
+
+/* GRID IN PROJECTS ------------------------------ */
+
+.project {
+  @apply bg-indigo-700
+		text-gray-100
+		min-w-full
+		h-32
+		min-h-full
+		rounded;
+}
