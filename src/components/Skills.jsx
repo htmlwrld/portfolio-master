@@ -6,7 +6,7 @@ import { Text } from "../container/Language";
 
 const Skills = () => {
   return (
-    <section className="bg-black" id="skills">
+    <section className="bg-black w-[1400px] mx-auto" id="skills">
       <div className="bg-black relative text-center">
         <h2 className="text-[#001987] font-space md:text-[2.5rem] text-[2rem] mx-auto md:absolute z-[80] md:left-0 md:right-0">
           <Text tid="skills" />

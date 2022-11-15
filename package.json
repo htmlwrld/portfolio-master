@@ -9,10 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.139",
     "hover.css": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.6.0",
+    "react-scroll-parallax": "^3.3.2",
     "react-tooltip": "^4.4.2"
   },
   "devDependencies": {

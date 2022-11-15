@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-black md:block flex items-center justify-between">
-      <header className="bg-black flex items-center md:justify-between h-20 md:mx-auto md:px-[8rem] px-[2rem] max-w-[1400px] ">
+      <header className="bg-black flex items-center md:justify-between h-20 md:mx-auto md:px-[6rem] px-[2rem] max-w-[1400px] ">
         <h1 className="font-space italic w-full text-3xl font-Barlow font-[800] text-[#001987]">
           claudia.
         </h1>
