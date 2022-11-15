@@ -8,9 +8,9 @@ const Home2 = () => {
   return (
     <div className="md:h-screen sm:h-[850px] background_home flex mt-[-5rem]">
       <div className="mx-auto md:w-[1400px] m-auto h-auto">
-        <div className="grid md:grid-cols-2 ">
-          <div className="relative md:flex md:flex-col z-10 h-[32rem] mr-[3.5rem]">
-            <div className="absolute right-8 z-10 mt-[10rem] md:right-0 md:mt-[6.5rem] md:mr-[-4rem] text-blue-800 font-oswald_bold text-right md:rotate-[270deg]">
+        <div className="grid md:grid-cols-2 relative ">
+          <div className="relative md:flex md:flex-col z-10 h-[32rem] md:mr-[3.5rem]">
+            <div className="absolute right-2 z-10 mt-[10rem] md:right-0 md:mt-[6.5rem] md:mr-[-4rem] text-blue-800 font-oswald_bold text-right md:rotate-[270deg]">
               <div className="mr-3">
                 <h2 className=" sm2:text-[2.7rem] sm:text-[2.5rem] mb-[-20px] md:text-[2.4rem]">
                   <Text tid="home_hello" />
@@ -31,12 +31,12 @@ const Home2 = () => {
               </p>
             </div>
           </div>
-          <div className="absolute right-[8rem] mt-[-15rem] width- p-0">
+          <div className=" absolute overflow-hidden right-[-2rem] mt-[-15rem]  p-0">
             <Spline scene="https://prod.spline.design/5btbDaioI8BnKceJ/scene.splinecode" />
           </div>
           <div className="absolute left-[-13rem] z-0">
             <img
-              className="md:hidden pr-[9rem] pt-[3rem] h-auto"
+              className="md:hidden mr-[9rem] pt-[3rem] h-auto"
               src={neptuneMb}
             ></img>
           </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CgMenu } from "react-icons/Cg";
+import { CgMenu } from "react-icons/cg";
 import { Text } from "../container/Language";
 import LanguageSelector from "./LanguageSelector";
 
