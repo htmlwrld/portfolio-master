@@ -31,7 +31,7 @@ const Home2 = () => {
               </p>
             </div>
           </div>
-          <div className=" absolute overflow-hidden right-[-2rem] mt-[-15rem]  p-0">
+          <div className="absolute overflow-hidden right-[-2rem] mt-[-15rem]  p-0">
             <Spline scene="https://prod.spline.design/5btbDaioI8BnKceJ/scene.splinecode" />
           </div>
           <div className="absolute left-[-13rem] z-0">
