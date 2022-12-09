@@ -9,13 +9,13 @@ const Projects = () => {
           <Text tid="projects" />
         </h2>
       </div>
-      <div class="grid bg-black overflow-hidden grid-cols-3 grid-rows-2 gap-7 absolute top-[20%] md:right-[7.5rem] md:left-[7.5rem] right-[2rem] bottom-0 left-[2rem] mx-auto ">
-        <div class="project">38</div>
-        <div class="project">39</div>
-        <div class="project">40</div>
-        <div class="project">4</div>
-        <div class="project">5</div>
-        <div class="project">6</div>
+      <div className="grid bg-black overflow-hidden grid-cols-3 grid-rows-2 gap-7 absolute top-[20%] md:right-[7.5rem] md:left-[7.5rem] right-[2rem] bottom-0 left-[2rem] mx-auto ">
+        <div className="project">38</div>
+        <div className="project">39</div>
+        <div className="project">40</div>
+        <div className="project">4</div>
+        <div className="project">5</div>
+        <div className="project">6</div>
       </div>
     </section>
   );
