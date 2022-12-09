@@ -12,7 +12,8 @@ module.exports = {
       fontFamily: {
         oswald_bold: ["Oswald", "sans-serif"],
         oswald_semi: ["Oswald", "sans-serif"],
-        Poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+
         space: ["Space Grotesk", "sans-serif"],
       },
       backgroundImage: {

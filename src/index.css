@@ -1,23 +1,148 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+:root {
+  --poppins_300: "Poppins", "sans-serif";
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.dropdown {
+  z-index: 999;
+}
+
+.fi {
+  margin-right: 10px;
+}
+
+/* .menu {
+  position: absolute;
+
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu > li {
+  margin: 0;
+
+  background-color: white;
+}
+
+.menu > li:hover {
+  background-color: lightgray;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+} */
+
+/* ------------------ HOME BACKGROUND */
 .background_home {
   background-color: black;
   background-image: url("../src/images/desktop/stars-bg-trans.png");
 }
 
-/* .background_skills {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-image: url("../src/images/mobile/sunMB_shadows.png");
-} */
+.pos {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.stars1 {
+  background: url(./images/desktop/stars-outer-faded.png) center center;
+  background-size: cover;
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0.3;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.stars2 {
+  background: url(./images/desktop/stars-back2.png) center center;
+  background-size: cover;
+  transform: scale3d(1.3, 1.3, 1.3);
+  opacity: 0.2;
+  animation: scaler 1.2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.stars3 {
+  transform: scale3d(1.3, 1.3, 1.3);
+  opacity: 0.1;
+  animation: scaler 1.2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes scaler {
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 0.3;
+  }
+}
+
+/* ------------------ HOME ARROW */
+.arrow span {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-right: 1.5px solid;
+  border-right-color: currentcolor;
+  border-bottom: 1.5px solid;
+  border-bottom-color: currentcolor;
+  border-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 100;
+}
+
+.arrow-container {
+  animation: 1s infinite alternate arrowBounce;
+}
+
+@keyframes arrowBounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+}
+
+/* ------------------ SKILLS SVGS */
 
 .icon:hover {
   stroke: rgba(233, 233, 233, 1);
@@ -43,7 +168,7 @@
 		rounded;
 }
 
-/* SVG HOVER EFFECT ----------------------------- */
+/* --------------------- SKILLS SVGS HOVER EFFECT */
 
 @-webkit-keyframes hvr-bob {
   0% {
@@ -111,7 +236,7 @@
   animation-direction: normal, alternate;
 }
 
-/* TOOLTIPS --------------------------- */
+/* SKILLS TOOLTIPS --------------------------- */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -176,7 +301,7 @@
   left: 50%;
 }
 
-/* GRID IN PROJECTS ------------------------------ */
+/* PROJECTS GRID ------------------------------ */
 
 .project {
   @apply bg-indigo-700

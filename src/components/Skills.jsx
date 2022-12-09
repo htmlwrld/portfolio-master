@@ -13,7 +13,7 @@ const Skills = () => {
         </h2>
       </div>
       <div className="h-[100%] mx-auto xl:max-w-[1250px] bg-black relative">
-        <img src={bg} alt="/" />
+        <img src={bg} alt="" />
         <div class="absolute grid overflow-hidden grid-cols-12 grid-rows-6 gap-0 top-0 right-0 bottom-0 left-0">
           <div class="box"></div>
           <div class="box"></div>
